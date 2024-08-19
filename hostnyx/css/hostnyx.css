@@ -4248,7 +4248,7 @@ Pagination
 }
 
 .pricing-table .pricing-header .price-wrap .amount {
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1;
     color: var(--color-text-dark);
     font-weight: 500;
