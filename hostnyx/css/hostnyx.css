@@ -133,6 +133,10 @@ img {
     vertical-align: middle;
 }
 
+.sty-img{
+    max-width: 30px;
+}
+
 ul.list-style,
 ol.list-style {
     margin: -10px 0;
