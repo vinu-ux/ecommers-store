@@ -7053,9 +7053,7 @@ body.op-modal-open {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: auto;
-    }
+   
 }
 /*=======================================================================
 4.Blocks Styles 
