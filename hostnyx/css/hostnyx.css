@@ -2767,14 +2767,14 @@ Pagination
 @media only screen and (max-width: 991px) {
     .banner {
         margin-top: -115px;
-        padding: 160px 0 0;
+        padding: 150px 0 0;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .banner {
         margin-top: -115px;
-        padding: 150px 0 0;
+        padding: 120px 0 0;
     }
 }
 
