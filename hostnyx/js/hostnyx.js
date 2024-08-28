@@ -98,7 +98,7 @@
 
         themeColorSet: function() {
 
-            var defaultColor = 'active-dark-mode';
+            var defaultColor = 'active-light-mode';
 
             if ($('body').hasClass('active-dark-mode')) {
                 $('body').removeClass('active-light-mode');
