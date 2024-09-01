@@ -4079,7 +4079,7 @@ Location:
 }
 
 .mobile-header.mobile-haeder2 {
-  background: var(--ztc-text-text-5);
+  background: var(--ztc-text-text-1);
   position: fixed;
 }
 .mobile-header.mobile-haeder2 .mobile-nav-icon {
@@ -4087,7 +4087,7 @@ Location:
 }
 
 .mobile-sidebar.mobile-sidebar2 {
-  background: var(--ztc-text-text-5);
+  background: var(--ztc-text-text-14);
   overflow-y: scroll;
 }
 .mobile-sidebar.mobile-sidebar2 .menu-close {
