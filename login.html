@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body >
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+  <!-- Error message show on apply this class 'is-invalid' on input  class -->
+  
+  <div class="page page-center bg-black">
+    <div class="container container-tight py-4">
+      <div class="card shadow-lg border-0 bg-gray-200" style="border-radius: 8% ;">
+      
+        <div class="card-body p-4 m-2">
+          <h2 class="h2 text-center d-flex justify-content-center text-white">Login</h2>
+
+          <form action="./" method="get" autocomplete="off" novalidate="">
+            <div class="mb-3">
+              <label class="form-label custom-cursor-default-hover required text-white">Username</label>
+              <input type="text" class="form-control bg-secondary-lt rounded-3 " placeholder="Enter Username" autocomplete="off"
+                data-has-listeners="true">
+                <div class="invalid-feedback">Username Required</div>
+            </div>
+            <div class="mb-2">
+              <label class="form-label required text-white">
+                Password
+                
+              </label>
+              <div class="input-group input-group-flat">
+                <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Your password" autocomplete="off"
+                  data-has-listeners="true">
+                <span class="input-group-text bg-secondary-lt ps-2 rounded-end-3">
+                  <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Show password"
+                    data-bs-original-title="Show password"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                      </path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+              <div class="invalid-feedback">Password Required</div>
+            </div>
+         
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary w-100 rounded-3">Sign in</button>
+            </div>
+          </form>
+          <div class="text-center mt-3 text-white">
+            Don't have account yet? <a class="text-primary fw-bold" href="signup.html" tabindex="-1">Sign up</a>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
