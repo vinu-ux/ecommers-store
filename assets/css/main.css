@@ -429,6 +429,8 @@ img {
   --ztc-text-text-11: #ADFF1C;
   --ztc-text-text-12: #0A2828;
   --ztc-text-text-13: #2E00FF;
+  --ztc-text-text-14: rgba(58,30,120,1) 97%;
+
   --ztc-bg-bg-1: #4E2FDA;
   --ztc-bg-bg-2: #EDE9F8;
   --ztc-bg-bg-3: #C8BFF4;
@@ -1279,10 +1281,10 @@ Location:
   line-height: var(--ztc-font-size-font-s18);
   font-weight: var(--ztc-weight-bold);
   color: var(--ztc-text-text-1);
-  background: var(--ztc-text-text-5);
+  background: var(--ztc-text-text-14);
   padding: 16px 24px;
   transition: all 0.4s;
-  border: 1px solid var(--ztc-text-text-5);
+  border: 1px solid var(--ztc-text-text-14);
   border-radius: 30px;
   position: relative;
   z-index: 1;
