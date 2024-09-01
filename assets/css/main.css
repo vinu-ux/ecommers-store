@@ -1315,8 +1315,8 @@ Location:
   color: var(--ztc-text-text-1);
   transition: all 0.4s;
   transform: translateY(-5px);
-  border: 1px solid var(--ztc-text-text-5);
-  background: var(--ztc-text-text-5);
+  border: 1px solid var(--ztc-text-text-14);
+  background: var(--ztc-text-text-14);
 }
 
 .header-btn6 {
@@ -4153,7 +4153,7 @@ Location:
   width: 40px;
   display: inline-block;
   text-align: center;
-  background: var(--ztc-text-text-5);
+  background: var(--ztc-text-text-14);
   border: 1px solid var(--ztc-text-text-2);
   border-radius: 50%;
   padding: 0;
