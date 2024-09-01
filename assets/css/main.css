@@ -1322,8 +1322,8 @@ Location:
   font-size: var(--ztc-font-size-font-s18);
   font-family: var();
   color: var(--ztc-text-text-6);
-  border-top: 1px solid var(--ztc-text-text-6);
-  border-bottom: 1px solid var(--ztc-text-text-6);
+  border-top: 1px solid var(--ztc-text-text-1);
+  border-bottom: 1px solid var(--ztc-text-text-1);
   padding: 15px 0;
   font-weight: var(--ztc-weight-bold);
   transition: all 0.4s;
@@ -6907,7 +6907,7 @@ Location:
   padding: 0;
 }
 .homepage1-body .header-area.homepage1 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-4);
+  color: var(--ztc-text-text-13);
 }
 .homepage1-body .header-area.homepage1 .header-elements {
   display: flex;
@@ -7161,7 +7161,7 @@ Location:
   padding: 0;
 }
 .homepage2-body .header-area.homepage2 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-13);
 }
 .homepage2-body .header-area.homepage2 .header-elements {
   display: flex;
@@ -7399,7 +7399,7 @@ Location:
   padding: 0;
 }
 .homepage3-body .header-area.homepage3 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-13);
 }
 .homepage3-body .header-area.homepage3 .header-elements {
   display: flex;
@@ -7642,7 +7642,7 @@ Location:
   padding: 0;
 }
 .homepage4-body .header-area.homepage4 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-6);
+  color: var(--ztc-text-text-13);
 }
 .homepage4-body .header-area.homepage4 .header-elements {
   display: flex;
@@ -7909,7 +7909,7 @@ Location:
   padding: 0;
 }
 .homepage5-body .header-area.homepage5 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-11);
+  color: var(--ztc-text-text-13);
 }
 .homepage5-body .header-area.homepage5 .header-elements {
   display: flex;
@@ -11831,7 +11831,8 @@ Location:
 .cta4-section-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-text-text-6);
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
 }
 @media (max-width: 767px) {
   .cta4-section-area {
@@ -12518,7 +12519,8 @@ Location:
   }
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active {
-  background: var(--ztc-bg-bg-10) !important;
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   position: relative;
   z-index: 2;
   border-radius: 8px;
@@ -12531,7 +12533,8 @@ Location:
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box ul li {
-  background: #F94595;
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box .pera {
@@ -12567,7 +12570,8 @@ Location:
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover ul li {
-  background: #F94595;
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box .quito1 {
@@ -12722,7 +12726,8 @@ Location:
   }
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active {
-  background: var(--ztc-bg-bg-10) !important;
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   position: relative;
   z-index: 2;
   border-radius: 8px;
@@ -12735,7 +12740,8 @@ Location:
   transition: all 0.4s;
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box ul li {
-  background: #F94595;
+  background: rgb(26,11,59);
+  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box .pera {
@@ -12764,14 +12770,16 @@ Location:
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover {
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-10);
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover .quito1 {
   filter: brightness(0) invert(1);
   transition: all 0.4s;
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover ul li {
-  background: #F94595;
+  background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover .pera {
@@ -13222,20 +13230,25 @@ Location:
 }
 .testimonial5-section-area .testimonial-header-area {
   margin-bottom: 60px;
+  color: white;
 }
 @media (max-width: 767px) {
   .testimonial5-section-area .testimonial-header-area {
     margin-bottom: 30px;
+    color: white;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial5-section-area .testimonial-header-area {
     margin-bottom: 30px;
+    color: white;
   }
 }
 .testimonial5-section-area .testimonial-header-area h5 {
+  color: white;
 }
 .testimonial5-section-area .testimonial-header-area h2 {
+  color: white!important;
 }
 .testimonial5-section-area .single-testimonial {
   cursor: move;
