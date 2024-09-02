@@ -13,32 +13,38 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body >
+<body style="overflow: hidden;">
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
   <!-- Error message show on apply this class 'is-invalid' on input  class -->
-  
+  <header class="header d-flex">
+        <div class="d-flex justify-content-start">
+            <img src="assets/img/logo/logo.png" style="width: 200px;" alt="">
+        </div>
+  </header>
   <div class="page page-center bg-black">
+
     <div class="container container-tight py-4">
+
       <div class="card shadow-lg border-0 bg-gray-200" style="border-radius: 8% ;">
-      
+
         <div class="card-body p-4 m-2">
           <h2 class="h2 text-center d-flex justify-content-center text-white">Login</h2>
 
           <form action="./" method="get" autocomplete="off" novalidate="">
             <div class="mb-3">
               <label class="form-label custom-cursor-default-hover required text-white">Username</label>
-              <input type="text" class="form-control bg-secondary-lt rounded-3 " placeholder="Enter Username" autocomplete="off"
-                data-has-listeners="true">
-                <div class="invalid-feedback">Username Required</div>
+              <input type="text" class="form-control bg-secondary-lt rounded-3 " placeholder="Enter Username"
+                autocomplete="off" data-has-listeners="true">
+              <div class="invalid-feedback">Username Required</div>
             </div>
             <div class="mb-2">
               <label class="form-label required text-white">
                 Password
-                
+
               </label>
               <div class="input-group input-group-flat">
-                <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Your password" autocomplete="off"
-                  data-has-listeners="true">
+                <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Your password"
+                  autocomplete="off" data-has-listeners="true">
                 <span class="input-group-text bg-secondary-lt ps-2 rounded-end-3">
                   <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Show password"
                     data-bs-original-title="Show password"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
@@ -55,7 +61,7 @@
               </div>
               <div class="invalid-feedback">Password Required</div>
             </div>
-         
+
             <div class="form-footer">
               <button type="submit" class="btn btn-primary w-100 rounded-3">Sign in</button>
             </div>
@@ -64,11 +70,12 @@
             Don't have account yet? <a class="text-primary fw-bold" href="signup.html" tabindex="-1">Sign up</a>
           </div>
         </div>
-        
+
       </div>
-      
+
     </div>
   </div>
 
 </body>
+
 </html>
