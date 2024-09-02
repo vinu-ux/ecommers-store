@@ -10892,7 +10892,7 @@ Location:
   display: inline-block;
   border-radius: 50%;
   text-align: center;
-  background: #222326;
+  background: var(--ztc-text-text-3);
   line-height: 80px;
   margin: 0 24px 0 0;
   transition: all 0.4s;
