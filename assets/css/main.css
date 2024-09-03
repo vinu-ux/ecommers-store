@@ -1558,6 +1558,12 @@ Location:
 .bg2 {
   background: var(--ztc-bg-bg-4);
 }
+.bg1 {
+  background: var(--ztc-bg-bg-7);
+}
+.bg3 {
+  background: var(--ztc-bg-bg-8);
+}
 
 /*============= COMMON CSS AREA ENDS===============*/
 .sp1 {
@@ -10193,7 +10199,7 @@ Location:
   }
 }
 .choose-section-area .accordian-tabs-area .accordion .accordion-item {
-  background: var(--ztc-text-text-4);
+  background: rgb(107, 12, 196);
   border-radius: 7px;
   border: 1px solid #E0E4E8;
 }
