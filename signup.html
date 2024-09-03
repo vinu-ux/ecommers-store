@@ -15,34 +15,66 @@
 
 <body >
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
-  <header class="header d-flex">
+  <header class="header d-flex justify-content-between" >
     <div class="d-flex justify-content-start">
         <img src="assets/img/logo/logo.png" style="width: 200px;" alt="">
     </div>
+    <div class="d-flex justify-content-end">
+      <nav class="navbar navbar-expand-lg mr-3">
+       
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="login.html">Login</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </nav>
+    </div>
 </header>
-  <div class="page page-center bg-black">
-    <div class="container container-tight py-2">
+  <div class="page  " class="page " style="background: rgb(26,11,59);
+background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
+    <div class="container container-tight py-4">
      
       <form class="card shadow-lg border-0 bg-gray-200" style="border-radius: 8% ;">
         <div class="card-body p-4 m-2">
           <h2 class="card-title text-center mb-4  text-white">Create new account</h2>
           <div class="mb-2">
-            <label class="form-label required text-white">User Name</label>
-            <input type="text" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter name">
+            <label class="form-label required text-white fw-light">NAME</label>
+            <input type="text" class="form-control bg-gray-200 border-0 rounded-3 bg-secondary-lt" placeholder="Enter name">
             <div class="invalid-feedback">Username Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label required text-white">Email address</label>
-            <input type="email" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter email">
-            <div class="invalid-feedback">Email Required</div>
-          </div>
-          <div class="mb-2">
-            <label class="form-label required text-white">Phone</label>
+            <label class="form-label required text-white">PHONE</label>
             <input type="number" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter Phone">
             <div class="invalid-feedback">Phone Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label required text-white">Password</label>
+            <label class="form-label required text-white">EMAIL</label>
+            <input type="email" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter email">
+            <div class="invalid-feedback">Email Required</div>
+          </div>
+          
+          <div class="mb-2">
+            <label class="form-label required text-white">PASSWORD</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Password" autocomplete="off">
               <span class="input-group-text rounded-end-3 ps-2 bg-secondary-lt">
@@ -54,7 +86,7 @@
             <div class="invalid-feedback">Password Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label required text-white">Confirm Password</label>
+            <label class="form-label required text-white">CONFIRM PASSWORD</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Password" autocomplete="off">
               <span class="input-group-text rounded-end-3 ps-2 bg-secondary-lt">
