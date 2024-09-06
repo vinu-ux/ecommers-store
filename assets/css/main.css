@@ -10796,6 +10796,30 @@ Location:
   }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+  .step-by-step .pera p{
+    padding-left: 10px;
+    
+  }
+
+  .step-by-step .pera {
+    padding-bottom: 30px;
+    
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .step-by-step {
+      position: relative;
+      z-index: 1;
+      border-left: 1px dashed #B2BBC6;
+      border-top: none;
+  }
+  .step-by-step::after {
+    border-top: none;
+  }
+}
+
 .step-by-step {
   position: relative;
   z-index: 1;
