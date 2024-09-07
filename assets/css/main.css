@@ -14518,3 +14518,8 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   width: 100%;
   }
 }
+
+.sm-font{
+  font-size: 12px;
+  font-weight: 600;
+}
