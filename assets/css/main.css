@@ -1564,6 +1564,10 @@ Location:
 .bg3 {
   background: var(--ztc-bg-bg-8);
 }
+.bg4 {
+  background: var(--ztc-bg-bg-15);
+}
+
 
 /*============= COMMON CSS AREA ENDS===============*/
 .sp1 {
@@ -11644,7 +11648,7 @@ Location:
 .location-section-area .location-boxes p {
   color: var(--ztc-text-text-3);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s16);
+  font-size: var(--ztc-font-size-font-s14);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
   line-height: 16px;
@@ -12551,8 +12555,6 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   }
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active {
-  background: rgb(26,11,59);
-background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   position: relative;
   z-index: 2;
   border-radius: 8px;
@@ -12565,8 +12567,6 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box ul li {
-  background: rgb(26,11,59);
-background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box .pera {
@@ -12588,42 +12588,29 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box {
   position: relative;
   z-index: 1;
-  padding: 32px;
   border-radius: 8px;
   transition: all 0.4s;
-  background: #303168;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover {
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-10);
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover .quito1 {
   filter: brightness(0) invert(1);
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box:hover ul li {
-  background: rgb(26,11,59);
-background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   transition: all 0.4s;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box .quito1 {
-  height: 48px;
-  width: 48px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s;
 }
-.testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box ul {
-  margin-bottom: 32px;
-}
+
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box ul li {
   display: inline-block;
-  height: 28px;
-  width: 28px;
   text-align: center;
-  line-height: 28px;
   transition: all 0.4s;
-  background: #46477B;
   border-radius: 4px;
   color: #FFBA00;
 }
@@ -12647,8 +12634,6 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   align-items: center;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box .content-area .images-content .img1 img {
-  height: 70px;
-  width: 70px;
   border-radius: 50%;
 }
 .testimonial2-section-area .testimonial2-owl-carousel-area .testimonial-author-box .content-area .images-content .content {
@@ -12758,8 +12743,6 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   }
 }
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active {
-  background: rgb(26,11,59);
-background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
   position: relative;
   z-index: 2;
   border-radius: 8px;
@@ -14522,4 +14505,42 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
 .sm-font{
   font-size: 12px;
   font-weight: 600;
+}
+
+.sh{
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, .04), 0 10px 16px 0 rgba(10, 31, 68, .06);
+}
+
+.testimonial-box {
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, .04), 0 10px 16px 0 rgba(10, 31, 68, .06);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.personal-info {
+  padding: 5px 0 20px 0;
+  border-bottom: 1px solid #edf1f2;
+}
+
+.rating {
+  background-color: #0095f7;
+  padding: 2px 12px;
+  border-radius: 50px;
+}
+
+.testimonial-box span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.profile-picture {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
