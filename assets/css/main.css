@@ -14491,14 +14491,14 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .video-sty {
-    height: 350px;
+    height: 400px;
   width: 500px;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .video-sty {
-    height: 100%;
-  width: 100%;
+    height: 300px;
+    width: 400px;
   }
 }
 
