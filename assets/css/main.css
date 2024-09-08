@@ -1565,7 +1565,7 @@ Location:
   background: var(--ztc-bg-bg-8);
 }
 .bg4 {
-  background: var(--ztc-bg-bg-15);
+  background: var(--ztc-bg-bg-2);
 }
 
 
@@ -7535,7 +7535,7 @@ Location:
 }
 .homepage3-body .header-area.homepage3 .header-elements .main-menu ul li:hover > a {
   transition: all 0.4s;
-  color: var(--ztc-text-text-5) !important;
+  color: var(--ztc-text-text-4) !important;
 }
 .homepage3-body .header-area.homepage3 .header-elements .main-menu ul li .tp-submenu {
   visibility: hidden;
@@ -7580,7 +7580,7 @@ Location:
   transition: all 0.4s;
   visibility: visible;
   opacity: 1;
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-4);
 }
 .homepage3-body .header-area.homepage3 .header-elements .main-menu ul li ul.dropdown-padding li {
   display: block;
@@ -7609,11 +7609,11 @@ Location:
   display: inline-block;
   visibility: hidden;
   opacity: 0;
-  background: var(--ztc-text-text-5);
+  background: var(--ztc-text-text-4);
 }
 .homepage3-body .header-area.homepage3 .header-elements .main-menu ul li ul.dropdown-padding li a:hover {
   padding-left: 25px;
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-4);
 }
 .homepage3-body .header-area.homepage3 .header-elements .main-menu ul li ul.dropdown-padding li a:hover::after {
   border-radius: 4px;
@@ -12727,7 +12727,7 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
 
 .testimonial3-section-area {
   position: relative;
-  background: var(--ztc-bg-bg-15);
+  background: var(--ztc-bg-bg-2);
 }
 .testimonial3-section-area .testimonial-header {
   margin-bottom: 60px;
