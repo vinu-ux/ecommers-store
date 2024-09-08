@@ -3543,6 +3543,15 @@ Location:
     top: 0;
   }
 }
+@media only screen and (min-width: 300px) and (max-width: 610px) {
+  .sty-top {
+    font-size: 10px;
+  }
+  .sty-top button{
+    font-size: 10px;
+  }
+
+}
 
 .homepage3-body {
   overflow-x: hidden;
