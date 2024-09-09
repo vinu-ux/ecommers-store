@@ -10916,8 +10916,6 @@ Location:
   font-weight: var(--ztc-weight-regular);
   color: var(--ztc-text-text-1);
   opacity: 80%;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #222326;
 }
 .contact1-section-area .contact-auhtor-box {
   display: flex;
@@ -14517,6 +14515,11 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
 .sm-font{
   font-size: 12px;
   font-weight: 600;
+}
+
+.sm-14-font{
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 
 .sh{
