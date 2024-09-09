@@ -1567,6 +1567,9 @@ Location:
 .bg4 {
   background: var(--ztc-bg-bg-2);
 }
+.bg5{
+  background: #e2e2e2;
+}
 
 
 /*============= COMMON CSS AREA ENDS===============*/
