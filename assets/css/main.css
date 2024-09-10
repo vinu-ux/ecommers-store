@@ -5154,3 +5154,19 @@ color: #FE846F;
 .bg7{
   background-color: rgb(202 203 205)
 }
+.sty-header{
+  position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 80%;
+    right: 0px;
+}
+.sty-body{
+  z-index: -1;
+  width: 80%;
+  position: absolute !important;
+  right: 0px;
+  top: 10vh;
+  background: #dee3e663;
+
+}
