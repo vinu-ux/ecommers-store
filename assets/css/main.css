@@ -6104,7 +6104,7 @@ Location:
 .footer3-section-area {
   position: relative;
   z-index: 1;
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
 }
 @media (max-width: 767px) {
   .footer3-section-area {
@@ -6332,8 +6332,7 @@ Location:
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 24px 0;
-  border-top: 1px solid #E5E7EB;
+  padding: 15px 0 15px 0;
   width: 100%;
 }
 @media (max-width: 767px) {
