@@ -3383,21 +3383,7 @@ Location:
   justify-content: center;
 }
 
-.preloader2 {
-  background: var(--ztc-bg-bg-11) !important;
-}
 
-.preloader3 {
-  background: var(--ztc-text-text-1) !important;
-}
-
-.preloader4 {
-  background: var(--ztc-text-text-12) !important;
-}
-
-.preloader5 {
-  background: var(--ztc-text-text-1) !important;
-}
 
 .loading-container,
 .loading {
@@ -3418,47 +3404,14 @@ Location:
   transform-origin: 50% 50%;
 }
 
-.preloader2 .loading {
-  border-color: transparent var(--ztc-text-text-1) transparent var(--ztc-text-text-1) !important;
-  border: 1px solid transparent;
-  animation: rotate-loading 1.5s linear 0s infinite normal;
-  transform-origin: 50% 50%;
-}
 
-.preloader3 .loading {
-  border-color: transparent var(--ztc-text-text-6) transparent var(--ztc-text-text-6) !important;
-  border: 1px solid transparent;
-  animation: rotate-loading 1.5s linear 0s infinite normal;
-  transform-origin: 50% 50%;
-}
-
-.preloader4 .loading {
-  border-color: transparent var(--ztc-text-text-11) transparent var(--ztc-text-text-11) !important;
-  border: 1px solid transparent;
-  animation: rotate-loading 1.5s linear 0s infinite normal;
-  transform-origin: 50% 50%;
-}
-
-.preloader5 .loading {
-  border-color: transparent var(--ztc-text-text-2) transparent var(--ztc-text-text-2) !important;
-  border: 1px solid transparent;
-  animation: rotate-loading 1.5s linear 0s infinite normal;
-  transform-origin: 50% 50%;
-}
 
 .loading-container:hover .loading,
 .loading-container .loading {
   transition: all 0.5s ease-in-out;
 }
 
-#loading-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 70px;
-  width: 60px;
-}
+
 
 @keyframes rotate-loading {
   0% {
@@ -3469,13 +3422,7 @@ Location:
   }
 }
 /* END: Preloader */
-.header-search-container form input {
-  outline: none;
-  border: none;
-  background: none;
-  font-family: var(--ztc-family-font1);
-  font-weight: 500;
-}
+
 
 
 
