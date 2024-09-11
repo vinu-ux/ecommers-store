@@ -53,37 +53,37 @@
 			  </div>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a onclick="showDiv('showDashboard')" class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Dashboard
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a onclick="showDiv('showPrice')" class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Order Now
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Transaction
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Server Status
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Live Chat Support
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Support
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font" >
+			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Settings
 			  </a>
 			</li>
@@ -266,9 +266,204 @@
 
 			<main class="content p-0" style="overflow: scroll;overflow-x: hidden;" >
 				<div class="container-fluid p-0" >
+					<div id="showDashboard" style="display: none;">
+						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
+							<div onclick="showDiv('showNo')" class="col-4 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px">
+								<i class="fa-solid fa-cart-plus fs-1 mb-2"></i>
+								<h3 class="fw-semibold">Create New Store</h3>
+							</div>
+						</div>
+					</div>
 					
-				</div>
+					<div id="showNo" style="display: none;">
+						<div class="col-12 col-lg-8 col-xxl-9 d-flex"></div>
+							<div class="card flex-fill">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Dashboard</h5>
+								</div>
+								<table class="table table-hover my-0">
+									<thead>
+										<tr>
+											<th>Product/Service</th>
+											<th class="d-none d-xl-table-cell">Status</th>
+											<th class="d-none d-xl-table-cell">Renewal cost</th>
+											<th>Billing Cycle</th>
+											<th class="d-none d-md-table-cell">Expiry Date</th>
+											<th class="d-none d-md-table-cell"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Project Apollo</td>
+											<td><span class="badge bg-success">Done</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+										</tr>
+										<tr>
+											<td>Project Fireball</td>
+											<td><span class="badge bg-danger">Cancelled</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">William Harris</td>
+										</tr>
+										<tr>
+											<td>Project Hades</td>
+											<td><span class="badge bg-success">Done</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">Sharon Lessman</td>
+										</tr>
+										<tr>
+											<td>Project Nitro</td>
+											<td><span class="badge bg-warning">In progress</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+										</tr>
+										<tr>
+											<td>Project Phoenix</td>
+											<td><span class="badge bg-success">Done</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">William Harris</td>
+										</tr>
+										<tr>
+											<td>Project X</td>
+											<td><span class="badge bg-success">Done</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">Sharon Lessman</td>
+										</tr>
+										<tr>
+											<td>Project Romeo</td>
+											<td><span class="badge bg-success">Done</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">Christina Mason</td>
+										</tr>
+										<tr>
+											<td>Project Wombat</td>
+											<td><span class="badge bg-warning">In progress</span></td>
+											<td class="d-none d-xl-table-cell">01/01/2021</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td class="d-none d-md-table-cell">William Harris</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					<div id="showPrice" class="pricing-section-area" style="display: none;">
+						<div class="row  p-4">
+							<div class="col-lg-4 col-md-6 p-4" >
+								<div class="pricing-boxarea" style="background: rgb(26,11,59);
+				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
+									<h4 class="text-white">Lite Plan</h4>
+									<p class="text-white-50">Great for small businesses. Includes domain, limited storage, and essential features to get you started</p>
+									<h1 class="text-white">₹999 <span class="text-white-50">/monthly</span></h1>
+									<div class="space32"></div>
+									<div class="btn-area1">
+										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+									</div>
+									<div class="space32"></div>
+									<div class="list-area">
+										<h5>Service Include:</h5>
+										<ul>
+											<li><img src="assets/img/icons/check2.svg" alt="" class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Free .in Domain</li>
+											<li><img src="assets/img/icons/check2.svg" alt="" class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">5GB Storage</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Monthly Renewal at ₹499.</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">1 Bussiness Email</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Limited Resources</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Single Payment Gateway</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">99.9% Uptime</li>
+										</ul>
+									</div>
+									<div class="space24"></div>
+									<p class="pera">Small businesses or startups looking to <br class="d-lg-block d-none"> establish their online presence.</p>
+								</div>
+							</div>
+				  
+							<div class="col-lg-4 col-md-6 p-4">
+								<div class="pricing-boxarea" style="background: rgb(26,11,59);
+				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
+									<h4 class="text-white">Hero Plan</h4>
+									<p class="text-white-50 pb-1"> Perfect for growing businesses. More storage, unlimited email, and extra features like chatbots and multiple payment options.</p>
+									<h1 class="text-white">₹1999 <span class="text-white-50">/monthly</span></h1>
+									<div class="space32"></div>
+									<div class="btn-area1">
+										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+									</div>
+									<div class="space32"></div>
+									<div class="list-area">
+										<h5>Service Include:</h5>
+										<ul>
+											<li><img src="assets/img/icons/check2.svg" alt="" class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Free .com domain</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">20 GB Storage</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Monthly Renewal at ₹1499.</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">3 Business Emails</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Multi Payment Gateway</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Live Chat Bot</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">99.9% Uptime</li>
+										</ul>
+									</div>
+									<div class="space24"></div>
+									<p class="pera">Small businesses or startups looking to <br class="d-lg-block d-none"> establish their online presence.</p>
+								</div>
+							</div>
+				  
+							<div class="col-lg-4 col-md-6 p-4" >
+								<div class="pricing-boxarea" style="background: rgb(26,11,59);
+				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
+									<h4 class="text-white">Pro Plan</h4>
+									<p class="text-white-50">For larger businesses. Unlimited storage and email, with advanced features and unlimited admin access.</p>
+									<h1 class="text-white">₹2999 <span class="text-white-50">/monthly</span></h1>
+									<div class="space32"></div>
+									<div class="btn-area1">
+										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+									</div>
+									<div class="space32"></div>
+									<div class="list-area">
+										<h5>Service Include:</h5>
+										<ul>
+											<li><img src="assets/img/icons/check2.svg" alt="" class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Free .com Domain</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Unlimited Storage</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Monthly Renewal at ₹2499.</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">5 Business Email</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">Unlimited Resources</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">AI Chat Bot</li>
+											<li><img src="assets/img/icons/check2.svg" alt=""  class="check2"><img src="assets/img/icons/check3.svg" alt="" class="check3">99.9% Uptime</li>
+				  
+										</ul>
+									</div>
+									<div class="space24"></div>
+									<p class="pera">Small businesses or startups looking to <br class="d-lg-block d-none"> establish their online presence.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
 			</main>
+
+<script>
+	function showDiv(id){
+		let div =	document.querySelector('#'+id)
+		if(id == 'showNo'){
+			document.querySelector('#showDashboard').style.display = "none"
+			document.querySelector('#showPrice').style.display = "none"
+		}
+		if(id == 'showDashboard'){
+		document.querySelector('#showNo').style.display = "none"	
+		document.querySelector('#showPrice').style.display = "none"	
+		}
+		if(id == 'showPrice'){
+		document.querySelector('#showNo').style.display = "none"	
+		document.querySelector('#showDashboard').style.display = "none"	
+		}
+		div.style.display = "block";
+	}
+</script>
 
 			<footer class="footer">
 				<div class="container-fluid">
@@ -297,227 +492,10 @@
 
 	<script src="js/app.js"></script>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
-			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
-			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-			// Line chart
-			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Sales ($)",
-						fill: true,
-						backgroundColor: gradient,
-						borderColor: window.theme.primary,
-						data: [
-							2115,
-							1562,
-							1584,
-							1892,
-							1587,
-							1923,
-							2566,
-							2448,
-							2805,
-							3438,
-							2917,
-							3327
-						]
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					tooltips: {
-						intersect: false
-					},
-					hover: {
-						intersect: true
-					},
-					plugins: {
-						filler: {
-							propagate: false
-						}
-					},
-					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 1000
-							},
-							display: true,
-							borderDash: [3, 3],
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}]
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Pie chart
-			new Chart(document.getElementById("chartjs-dashboard-pie"), {
-				type: "pie",
-				data: {
-					labels: ["Chrome", "Firefox", "IE"],
-					datasets: [{
-						data: [4306, 3801, 1689],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger
-						],
-						borderWidth: 5
-					}]
-				},
-				options: {
-					responsive: !window.MSInputMethodContext,
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					cutoutPercentage: 75
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Bar chart
-			new Chart(document.getElementById("chartjs-dashboard-bar"), {
-				type: "bar",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "This year",
-						backgroundColor: window.theme.primary,
-						borderColor: window.theme.primary,
-						hoverBackgroundColor: window.theme.primary,
-						hoverBorderColor: window.theme.primary,
-						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-						barPercentage: .75,
-						categoryPercentage: .5
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					scales: {
-						yAxes: [{
-							gridLines: {
-								display: false
-							},
-							stacked: false,
-							ticks: {
-								stepSize: 20
-							}
-						}],
-						xAxes: [{
-							stacked: false,
-							gridLines: {
-								color: "transparent"
-							}
-						}]
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var markers = [{
-					coords: [31.230391, 121.473701],
-					name: "Shanghai"
-				},
-				{
-					coords: [28.704060, 77.102493],
-					name: "Delhi"
-				},
-				{
-					coords: [6.524379, 3.379206],
-					name: "Lagos"
-				},
-				{
-					coords: [35.689487, 139.691711],
-					name: "Tokyo"
-				},
-				{
-					coords: [23.129110, 113.264381],
-					name: "Guangzhou"
-				},
-				{
-					coords: [40.7127837, -74.0059413],
-					name: "New York"
-				},
-				{
-					coords: [34.052235, -118.243683],
-					name: "Los Angeles"
-				},
-				{
-					coords: [41.878113, -87.629799],
-					name: "Chicago"
-				},
-				{
-					coords: [51.507351, -0.127758],
-					name: "London"
-				},
-				{
-					coords: [40.416775, -3.703790],
-					name: "Madrid "
-				}
-			];
-			var map = new jsVectorMap({
-				map: "world",
-				selector: "#world_map",
-				zoomButtons: true,
-				markers: markers,
-				markerStyle: {
-					initial: {
-						r: 9,
-						strokeWidth: 7,
-						stokeOpacity: .4,
-						fill: window.theme.primary
-					},
-					hover: {
-						fill: window.theme.primary,
-						stroke: window.theme.primary
-					}
-				},
-				zoomOnScroll: false
-			});
-			window.addEventListener("resize", () => {
-				map.updateSize();
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
-			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-			document.getElementById("datetimepicker-dashboard").flatpickr({
-				inline: true,
-				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
-				nextArrow: "<span title=\"Next month\">&raquo;</span>",
-				defaultDate: defaultDate
-			});
-		});
-	</script>
+	
+	
+	
+	
 
 <!--===== PROGRESS STARTS=======-->
 
