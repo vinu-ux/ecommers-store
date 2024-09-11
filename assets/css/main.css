@@ -5170,3 +5170,16 @@ color: #FE846F;
   background: #dee3e663;
 
 }
+
+.sty-font{
+  width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+.sty-font1{
+  width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600 !important;
+}
