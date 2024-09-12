@@ -5183,3 +5183,7 @@ color: #FE846F;
     font-size: 17px !important;
     font-weight: 700 !important;
 }
+
+.bg-lt-green{
+  background-color: rgba(234,247,236);
+}
