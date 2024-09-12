@@ -68,13 +68,8 @@
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a  class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
+			  <a onclick="showDiv('showServer')" class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Server Status
-			  </a>
-			</li>
-			<li class="mb-1 sidebar-item">
-			  <a class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
-				<i class="fa-solid fa-house text-white fs-5"></i>	Live Chat Support
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
@@ -573,6 +568,31 @@
 							</div>
 						</div>
 					</div>
+					<div id="showServer" style="display: none;">
+						<div class="card" style="height: 50px">
+							<div class="card-header">
+								<h5 class="card-title mb-0"></h5>
+							</div>
+							</div>
+						<div class="row ">
+							<div class="col-12 d-flex align-content-center justify-content-center">
+								<i class="fa-regular fa-circle-check fs-1 text-success"></i>
+							</div>
+							<div class="col-12 d-flex align-content-center justify-content-center">
+								<h2 class="fw-bolder">All Systems are operational</h2>
+							</div>
+							<div class="col-12 d-flex align-content-center justify-content-center">
+								<p>Log in to view detailed status for your store. <br> View recent events</p>
+							</div><i class=""></i>
+<div class="col-12 d-flex align-content-center justify-content-center">
+	<i class="fa-regular fa-circle-check text-success ms-1"></i> <span class="ms-2">No Known issues</span>
+	<i class="fa-regular fa-clock text-warning ms-1"></i> <span class="ms-2">Maintenance</span>
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather text-warning feather-alert-circle align-middle me-2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg><span >Degraded</span>
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather text-danger feather-alert-triangle align-middle me-2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> <span>Partial Outage</span>
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather text-danger feather-minus-circle align-middle me-2"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg> <span>Outage</span>
+</div>
+						</div>
+					</div>
 					</div>
 			</main>
 
@@ -585,6 +605,7 @@
 			document.querySelector('#showTransaction').style.display = "none"
 			document.querySelector('#showSupport').style.display = "none"
 			document.querySelector('#showSettings').style.display = "none"
+			document.querySelector('#showServer').style.display = "none"
 		}
 		else if(id == 'showDashboard'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -592,6 +613,7 @@
 		document.querySelector('#showTransaction').style.display = "none"
 		document.querySelector('#showSupport').style.display = "none"
 		document.querySelector('#showSettings').style.display = "none"
+		document.querySelector('#showServer').style.display = "none"
 		}
 		else if(id == 'showPrice'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -599,6 +621,7 @@
 		document.querySelector('#showTransaction').style.display = "none"
 		document.querySelector('#showSupport').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"
+		document.querySelector('#showServer').style.display = "none"
 		}
 		else if(id == 'showTransaction'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -606,6 +629,7 @@
 		document.querySelector('#showPrice').style.display = "none"	
 		document.querySelector('#showSupport').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"
+		document.querySelector('#showServer').style.display = "none"
 		}
 		else if(id == 'showSupport'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -613,12 +637,23 @@
 		document.querySelector('#showPrice').style.display = "none"	
 		document.querySelector('#showTransaction').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"	
+		document.querySelector('#showServer').style.display = "none"
 		}
 		else if(id == 'showSettings'){
 		document.querySelector('#showNo').style.display = "none"	
 		document.querySelector('#showDashboard').style.display = "none"
 		document.querySelector('#showPrice').style.display = "none"	
 		document.querySelector('#showTransaction').style.display = "none"	
+		document.querySelector('#showSupport').style.display = "none"	
+		document.querySelector('#showServer').style.display = "none"	
+		}
+		else if(id == 'showServer'){
+		document.querySelector('#showNo').style.display = "none"	
+		document.querySelector('#showDashboard').style.display = "none"
+		document.querySelector('#showPrice').style.display = "none"	
+		document.querySelector('#showTransaction').style.display = "none"	
+		document.querySelector('#showSupport').style.display = "none"
+		document.querySelector('#showSettings').style.display = "none"	
 		}
 		div.style.display = "block";
 	}
