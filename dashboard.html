@@ -68,7 +68,7 @@
 			  </a>
 			</li>
 			<li class="mb-1 sidebar-item">
-			  <a onclick="showDiv('showServer')" class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
+			  <a onclick="showDiv('showServer')" class="btn btn-toggle  text-white rounded border-0 text-start px-4 collapsed sty-font1" >
 				<i class="fa-solid fa-house text-white fs-5"></i>	Server Status
 			  </a>
 			</li>
@@ -263,7 +263,7 @@
 				<div class="container-fluid p-0" >
 					<div id="showDashboard" style="display: none;">
 						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
-							<div onclick="showDiv('showNo')" class="col-4 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px">
+							<div onclick="showDiv('showNo')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px">
 								<i class="fa-solid fa-cart-plus fs-1 mb-2"></i>
 								<h3 class="fw-semibold">Create New Store</h3>
 							</div>
@@ -601,19 +601,19 @@
 				</div>
 				<div class="card-body">
 					<div class="row">
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Admin <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Hosting <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Reports and Dashboards <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Admin <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Hosting <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Reports and Dashboards <br>No Known issues</div>
 					</div>
 					<div class="row">
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Front End <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Backend <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Third Party services <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Front End <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Backend <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Third Party services <br>No Known issues</div>
 					</div>
 					<div class="row">
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Support <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Checkout <br>No Known issues</div>
-						<div class="col-4 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Domain <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Support <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Checkout <br>No Known issues</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3"><i class="fa-regular fa-circle-check fs-6 text-success me-2"></i>Domain <br>No Known issues</div>
 					</div>
 				</div>
 	</div>
@@ -682,6 +682,8 @@
 		document.querySelector('#showSettings').style.display = "none"	
 		}
 		div.style.display = "block";
+		const sidebar = document.querySelector('#sidebar');
+		sidebar.classList.remove('collapsed')
 	}
 </script>
 
