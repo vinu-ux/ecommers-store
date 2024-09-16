@@ -87,9 +87,28 @@
 			
 			
 		  </ul>
-
+		  <div class="space20"></div>
+		  <div class="space20"></div>
+		  <div class="space20"></div>
+		  <div class="space20"></div>
+		  <div class="space20"></div>
+		  <div class="space20"></div>
+<hr>
+<ul class="list-unstyled ps-0">
+	<li class="mb-1 sidebar-item">
+		<a  class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
+		  <i class="fa-solid fa-gear text-white fs-3 me-3"></i>	<span class="fs-3">Sign Out</span>
+		</a>
+	  </li>
+	  <li class="mb-1 sidebar-item">
+		<a  class="btn btn-toggle text-white rounded border-0 text-start px-4 collapsed sty-font1" >
+		  <i class="fa-solid fa-gear text-white fs-3 me-3"></i><span class="fs-3">Knowledge Base</span>	
+		</a>
+	  </li>
+</ul>	
 				
 			</div>
+			
 		</nav>
 
 		<div class="main" style="height: 100vh;">
@@ -262,7 +281,7 @@
 				<div class="container-fluid p-0" >
 					<div id="showDashboard" style="display: none;">
 						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
-							<div onclick="showDiv('showNo')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
+							<div onclick="showDiv('showCreateStore')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
 								<i class="fa-solid fa-cart-plus fs-1 mb-2"></i>
 								<h3 class="fw-semibold">Create New Store</h3>
 							</div>
@@ -270,9 +289,49 @@
 					</div>
 					
 					<div id="showCreateStore" style="display: none;">
-						<div  class="row align-items-center justify-content-center" style="height: 80vh;"></div>
-							<div onclick="showDiv('showNo')" class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
-								<h4>Tell us about your business</h4>
+						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
+							<div class="col-lg-5 col-md-5 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" >
+								<h4 class="p-3 mt-2 fw-semibold">Tell us about your business</h4>
+
+								<div class="p-3 w-100">
+									<label class="form-label fw-semibold">Are you selling yet</label>
+									<select class="form-select">
+										<option value="">--Select--</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="p-3 w-100">
+									<label class="form-label fw-semibold">Current Annual Revenue</label>
+									<select class="form-select">
+										<option value="">--Select--</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="p-3 w-100">
+									<label class="form-label fw-semibold">Total count of the products you sell</label>
+									<select class="form-select">
+										<option value="">--Select--</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="p-3 w-100">
+									<label class="form-label fw-semibold">What are you planning to sell on the website?</label>
+									<select class="form-select">
+										<option value="">--Select--</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="col-12 m-2 d-flex justify-content-end">
+										<a class="btn btn-primary">Next</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -625,11 +684,22 @@
 </div>
 					</div>
 					</div>
+					</div>
 			</main>
 
 <script>
 	function showDiv(id){
 		let div =	document.querySelector('#'+id)
+		
+		if(id == 'showCreateStore'){
+			document.querySelector('#showDashboard').style.display = "none"
+			document.querySelector('#showPrice').style.display = "none"
+			document.querySelector('#showTransaction').style.display = "none"
+			document.querySelector('#showSupport').style.display = "none"
+			document.querySelector('#showSettings').style.display = "none"
+			document.querySelector('#showServer').style.display = "none"
+			document.querySelector('#showNo').style.display = "none"
+		}
 		if(id == 'showNo'){
 			document.querySelector('#showDashboard').style.display = "none"
 			document.querySelector('#showPrice').style.display = "none"
@@ -637,6 +707,7 @@
 			document.querySelector('#showSupport').style.display = "none"
 			document.querySelector('#showSettings').style.display = "none"
 			document.querySelector('#showServer').style.display = "none"
+			document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showDashboard'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -645,6 +716,7 @@
 		document.querySelector('#showSupport').style.display = "none"
 		document.querySelector('#showSettings').style.display = "none"
 		document.querySelector('#showServer').style.display = "none"
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showPrice'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -653,6 +725,7 @@
 		document.querySelector('#showSupport').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"
 		document.querySelector('#showServer').style.display = "none"
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showTransaction'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -661,6 +734,7 @@
 		document.querySelector('#showSupport').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"
 		document.querySelector('#showServer').style.display = "none"
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showSupport'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -669,6 +743,7 @@
 		document.querySelector('#showTransaction').style.display = "none"	
 		document.querySelector('#showSettings').style.display = "none"	
 		document.querySelector('#showServer').style.display = "none"
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showSettings'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -677,6 +752,7 @@
 		document.querySelector('#showTransaction').style.display = "none"	
 		document.querySelector('#showSupport').style.display = "none"	
 		document.querySelector('#showServer').style.display = "none"	
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		else if(id == 'showServer'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -685,6 +761,7 @@
 		document.querySelector('#showTransaction').style.display = "none"	
 		document.querySelector('#showSupport').style.display = "none"
 		document.querySelector('#showSettings').style.display = "none"	
+		document.querySelector('#showCreateStore').style.display = "none"
 		}
 		div.style.display = "block";
 		const sidebar = document.querySelector('#sidebar');
