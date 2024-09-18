@@ -279,6 +279,7 @@
 
 			<main class="content p-0" style="overflow: scroll;overflow-x: hidden;" >
 				<div class="container-fluid p-0" >
+					<!---------------------------------  Show main Dashboard  ------------------------------------>
 					<div id="showDashboard" style="display: none;">
 						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
 							<div onclick="showDiv('showCreateStore')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
@@ -287,7 +288,7 @@
 							</div>
 						</div>
 					</div>
-					
+					<!---------------------------------  Create New Store Page ------------------------------------>
 					<div id="showCreateStore" style="display: none;">
 						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
 							<div class="col-lg-5 col-md-5 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" >
@@ -335,6 +336,7 @@
 							</div>
 						</div>
 					</div>
+					<!---------------------------------  Create New Store Page 2 ------------------------------------>
 					<div id="showStoreDetails" style="display: none;" >
 						<div class="card">
 							<div class="card-header">
@@ -348,6 +350,9 @@
 											<input type="text" class="form-control" placeholder="Disabled input" >
 										</div>
 									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0">Contact Information</h5>
 								</div>
 								<div class="row d-flex justify-content-center">
 									<div class="col-5">
@@ -399,6 +404,7 @@
 							</div>
 						</div>
 					</div>
+					<!---------------------------------  Create New Store Page 3------------------------------------>
 					<div id="showTemplate">
 						<div class="album bg-body-tertiary">
 							<div class="container">
@@ -550,6 +556,7 @@
 							</div>
 						  </div>
 					</div>
+					<!---------------------------------  Dashboard table ------------------------------------>
 					<div id="showNo" style="display: none;">
 						<div class="col-12 col-lg-12 col-xxl-12 d-flex ">
 							<div class="card flex-fill w-100 overflow-scroll">
@@ -582,16 +589,16 @@
 							</div>
 						</div>
 					</div>
+					<!---------------------------------  Pricing Section ------------------------------------>
 					<div id="showPrice" class="pricing-section-area" style="display: none;">
 						<div class="row  p-4">
 							<div class="col-lg-4 col-md-6 p-4" >
-								<div class="pricing-boxarea" style="background: rgb(26,11,59);
-				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
-									<h4 class="text-white">Lite Plan</h4>
-									<p class="text-white-50 mb-1">Great for small businesses. Includes domain, limited storage, and essential features to get you started</p>
-									<h1 class="text-white fs-1 pt-0 mb-1">₹999 <span class="text-white-50">/monthly</span></h1>
+								<div class="pricing-boxarea" style="background-color: hsl(240, 0%, 90%);">
+									<h4 >Lite Plan</h4>
+									<p class="mb-1">Great for small businesses. Includes domain, limited storage, and essential features to get you started</p>
+									<h1 class="fs-1 pt-0 mb-1">₹999 <span>/monthly</span></h1>
 									<div class="btn-area1">
-										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+										<a href="pricing.html" class="header-btn6 text-muted">CHOOSE YOUR PLAN</a>
 									</div>
 									<div class="space32"></div>
 									<div class="list-area">
@@ -612,13 +619,12 @@
 							</div>
 				  
 							<div class="col-lg-4 col-md-6 p-4">
-								<div class="pricing-boxarea" style="background: rgb(26,11,59);
-				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
-									<h4 class="text-white">Hero Plan</h4>
-									<p class="text-white-50 mb-1"> Perfect for growing businesses. More storage, unlimited email, and extra features like chatbots and multiple payment options.</p>
-									<h1 class="text-white fs-1 pt-0 mb-1">₹1999 <span class="text-white-50">/monthly</span></h1>
+								<div class="pricing-boxarea" style="background-color: hsl(240, 0%, 90%);">
+									<h4 >Hero Plan</h4>
+									<p class="mb-1"> Perfect for growing businesses. More storage, unlimited email, and extra features like chatbots and multiple payment options.</p>
+									<h1 class="fs-1 pt-0 mb-1">₹1999 <span >/monthly</span></h1>
 									<div class="btn-area1">
-										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+										<a href="pricing.html" class="header-btn6 text-muted">CHOOSE YOUR PLAN</a>
 									</div>
 									<div class="space32"></div>
 									<div class="list-area">
@@ -639,13 +645,12 @@
 							</div>
 				  
 							<div class="col-lg-4 col-md-6 p-4" >
-								<div class="pricing-boxarea" style="background: rgb(26,11,59);
-				  background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);">
-									<h4 class="text-white">Pro Plan</h4>
-									<p class="text-white-50 mb-1">For larger businesses. Unlimited storage and email, with advanced features and unlimited admin access.</p>
-									<h1 class="text-white fs-1 pt-0 mb-1">₹2999 <span class="text-white-50">/monthly</span></h1>
+								<div class="pricing-boxarea" style="background-color: hsl(240, 0%, 90%);">
+									<h4 >Pro Plan</h4>
+									<p class="mb-1">For larger businesses. Unlimited storage and email, with advanced features and unlimited admin access.</p>
+									<h1 class="fs-1 pt-0 mb-1">₹2999 <span >/monthly</span></h1>
 									<div class="btn-area1">
-										<a href="pricing.html" class="header-btn6 text-white">CHOOSE YOUR PLAN</a>
+										<a href="pricing.html" class="header-btn6 text-muted">CHOOSE YOUR PLAN</a>
 									</div>
 									<div class="space32"></div>
 									<div class="list-area">
@@ -667,7 +672,7 @@
 							</div>
 						</div>
 					</div>
-
+<!---------------------------------  Transaction ------------------------------------>
 					<div id="showTransaction" style="display: none;">
 						<div class="col-12 col-lg-12 col-xxl-12 d-flex">
 							<div class="card flex-fill w-100 overflow-scroll">
@@ -725,7 +730,7 @@
 							</div>
 						</div>
 					</div>
-
+<!---------------------------------  Support ------------------------------------>
 					<div id="showSupport" style="display: none;">
 							<div class="card flex-fill mb-0">
 								<div class="card-header">
@@ -771,6 +776,7 @@
 							</div>
 						</div>
 					</div>
+					<!---------------------------------  Settings ------------------------------------>
 					<div id="showSettings" style="display: none;" >
 						<div class="card">
 							<div class="card-header">
@@ -846,6 +852,7 @@
 							</div>
 						</div>
 					</div>
+					<!---------------------------------  Server ------------------------------------>
 					<div id="showServer" style="display: none;">
 						<div class="card" style="height: 50px">
 							<div class="card-header">
