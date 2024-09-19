@@ -5199,3 +5199,7 @@ color: #FE846F;
     text-wrap: nowrap;
   }
 }
+
+.fnt-chg>li{
+  font-size: 14px!important;
+}
