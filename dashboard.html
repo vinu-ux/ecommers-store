@@ -275,7 +275,7 @@
 					<!---------------------------------  Show main Dashboard  ------------------------------------>
 					<div id="showDashboard" style="display: none;">
 						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
-							<div onclick="showDiv('showCreateStore')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
+							<div onclick="showDiv('showDomain')" class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
 								<i class="fa-solid fa-cart-plus fs-1 mb-2"></i>
 								<h3 class="fw-semibold">Create New Store</h3>
 							</div>
@@ -297,13 +297,8 @@
 									</select>
 								</div>
 								<div class="p-3 w-100">
-									<label class="form-label fw-semibold">Current Annual Revenue</label>
-									<select class="form-select">
-										<option value="">--Select--</option>
-										<option value="">1</option>
-										<option value="">2</option>
-										<option value="">3</option>
-									</select>
+									<label class="form-label">What type Bussiness</label>
+									<input type="text" class="form-control" placeholder="Disabled input" >
 								</div>
 								<div class="p-3 w-100">
 									<label class="form-label fw-semibold">Total count of the products you sell</label>
@@ -349,29 +344,19 @@
 								</div>
 								<div class="row d-flex justify-content-center">
 									<div class="col-5">
+										
 										<div class="mb-1 w-100">
-											<label class="form-label">State</label>
-											<input type="text" class="form-control" placeholder="Disabled input" >
-										</div>
-										<div class="mb-1 w-100">
-											<label class="form-label">Country</label>
+											<label class="form-label">Address</label>
 											<input type="text" class="form-control" placeholder="Disabled input" >
 										</div>
 										<div class="mb-1 w-100">
 											<label class="form-label">Email</label>
 											<input type="text" class="form-control" placeholder="Disabled input" >
 										</div>
-										<div class="mb-1 w-100">
-											<label class="form-label">Bussiness Email</label>
-											<input type="text" class="form-control" placeholder="Disabled input" >
-										</div>
 									</div>
 									<div class="col-5">
 										
-										<div class="mb-1 w-100">
-											<label class="form-label">Postal Code</label>
-											<input type="text" class="form-control" placeholder="Disabled input" >
-										</div>
+										
 										<div class="mb-1 w-100">
 											<label class="form-label">Phone</label>
 											<input type="text" class="form-control" placeholder="Disabled input" >
@@ -390,12 +375,58 @@
 								
 							</div>
 							<div class="card-body d-flex justify-content-center">
-								<button class="btn btn-primary" onclick="showDiv('showTemplate')">Save Changes</button>
+								<button class="btn btn-primary" onclick="showDiv('showDomain')">Save Changes</button>
 							</div>
 						</div>
+						<!---------------------------------  Create New Store Page 3------------------------------------>
 					</div>
-					<!---------------------------------  Create New Store Page 3------------------------------------>
-					<div id="showTemplate">
+					<!---------------------------------  Show Domain section  ------------------------------------>
+					<div id="showDomain" style="display: none;">
+						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
+							<div class="row">
+								<h2 class="d-flex justify-content-center text-muted">Check Domain Availability</h2>
+								<div class="d-flex justify-content-center gap-2">
+									<input type="text" style="width: 60%;" class="form-control" placeholder="Disabled input" >
+									<a class="btn btn-primary">Search</a>
+								</div>
+								<div class="d-flex justify-content-center">
+									<span class="text-success fs-4 fw-semibold">Available</span>
+									<span class="text-danger fs-4 fw-semibold">Already Registered</span>
+								</div>
+								<div class="d-flex justify-content-center">
+									<a class="btn btn-primary" onclick="showDiv('showBussinessMail')">Choose Domain</a>
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+					<div id="showBussinessMail" style="display: none;">
+						<div  class="row align-items-center justify-content-center" style="height: 80vh;">
+							<div class="row justify-content-center align-self-center">
+								<h2 class="d-flex justify-content-center text-muted">Add Business Email</h2>
+								<div class="col-8">
+									<div class=" input-group mb-2">
+										<input type="text" class="form-control" placeholder="subdomain" autocomplete="off">
+										<span class="input-group-text">
+										  @mailname.com
+										</span>
+									  </div>
+								</div>
+								<div class="d-flex justify-content-center">
+									<span class="text-success fs-4 fw-semibold">Available</span>
+									<span class="text-danger fs-4 fw-semibold">Already Registered</span>
+								</div>
+								<div class="d-flex justify-content-center">
+									<a class="btn btn-primary" onclick="showDiv('showTemplate')">Choose Email</a>
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+					<!---------------------------------  Show template  ------------------------------------>
+					<div id="showTemplate" style="display: none;">
 						<div class="album bg-body-tertiary">
 							<div class="container">
 								<div class="row py-5">
@@ -903,6 +934,32 @@
 	function showDiv(id){
 		let div =	document.querySelector('#'+id)
 		
+		if(id == 'showBussinessMail'){
+			document.querySelector('#showDashboard').style.display = "none"
+			document.querySelector('#showPrice').style.display = "none"
+			document.querySelector('#showTransaction').style.display = "none"
+			document.querySelector('#showSupport').style.display = "none"
+			document.querySelector('#showSettings').style.display = "none"
+			document.querySelector('#showServer').style.display = "none"
+			document.querySelector('#showNo').style.display = "none"
+			document.querySelector('#showStoreDetails').style.display = "none"
+			document.querySelector('#showTemplate').style.display = "none"
+			document.querySelector('#showCreateStore').style.display = "none"
+			document.querySelector('#showDomain').style.display = "none"
+		}
+		if(id == 'showDomain'){
+			document.querySelector('#showDashboard').style.display = "none"
+			document.querySelector('#showPrice').style.display = "none"
+			document.querySelector('#showTransaction').style.display = "none"
+			document.querySelector('#showSupport').style.display = "none"
+			document.querySelector('#showSettings').style.display = "none"
+			document.querySelector('#showServer').style.display = "none"
+			document.querySelector('#showNo').style.display = "none"
+			document.querySelector('#showStoreDetails').style.display = "none"
+			document.querySelector('#showTemplate').style.display = "none"
+			document.querySelector('#showCreateStore').style.display = "none"
+			document.querySelector('#showBussinessMail').style.display = "none"
+		}
 		if(id == 'showCreateStore'){
 			document.querySelector('#showDashboard').style.display = "none"
 			document.querySelector('#showPrice').style.display = "none"
@@ -913,6 +970,8 @@
 			document.querySelector('#showNo').style.display = "none"
 			document.querySelector('#showStoreDetails').style.display = "none"
 			document.querySelector('#showTemplate').style.display = "none"
+			document.querySelector('#showDomain').style.display = "none"
+			document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		if(id == 'showStoreDetails'){
 			document.querySelector('#showDashboard').style.display = "none"
@@ -924,6 +983,8 @@
 			document.querySelector('#showNo').style.display = "none"
 			document.querySelector('#showCreateStore').style.display = "none"
 			document.querySelector('#showTemplate').style.display = "none"
+			document.querySelector('#showDomain').style.display = "none"
+			document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		if(id == 'showTemplate'){
 			document.querySelector('#showDashboard').style.display = "none"
@@ -935,6 +996,8 @@
 			document.querySelector('#showNo').style.display = "none"
 			document.querySelector('#showCreateStore').style.display = "none"
 			document.querySelector('#showStoreDetails').style.display = "none"
+			document.querySelector('#showDomain').style.display = "none"
+			document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		if(id == 'showNo'){
 			document.querySelector('#showDashboard').style.display = "none"
@@ -946,6 +1009,8 @@
 			document.querySelector('#showCreateStore').style.display = "none"
 			document.querySelector('#showStoreDetails').style.display = "none"
 			document.querySelector('#showTemplate').style.display = "none"
+			document.querySelector('#showDomain').style.display = "none"
+			document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showDashboard'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -957,6 +1022,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showPrice'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -968,6 +1035,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showTransaction'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -979,6 +1048,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showSupport'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -990,6 +1061,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showSettings'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -1001,6 +1074,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		else if(id == 'showServer'){
 		document.querySelector('#showNo').style.display = "none"	
@@ -1012,6 +1087,8 @@
 		document.querySelector('#showCreateStore').style.display = "none"
 		document.querySelector('#showStoreDetails').style.display = "none"
 		document.querySelector('#showTemplate').style.display = "none"
+		document.querySelector('#showDomain').style.display = "none"
+		document.querySelector('#showBussinessMail').style.display = "none"
 		}
 		div.style.display = "block";
 		const sidebar = document.querySelector('#sidebar');
