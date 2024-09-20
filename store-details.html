@@ -68,8 +68,8 @@
 				</button>
 				<div class="collapse" id="home-collapse">
 				  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-					<li class="px-4 sidebar-item p-1"><a href="#" class="sty-font1 text-white" ><span class="fs-4">Create Ticket</span></a></li>
-					<li class="px-4 sidebar-item p-1"><a href="support.html" class="sty-font1 text-white"><span class="fs-4">Supprort Details</span></a></li>
+					<li class="px-4 sidebar-item p-1"><a href="#" class="sty-font1 text-white" ><span class="fs-4">Open Ticket</span></a></li>
+					<li class="px-4 sidebar-item p-1"><a href="support.html" class="sty-font1 text-white"><span class="fs-4">View Ticket</span></a></li>
 				  </ul>
 				</div>
 			  </li>
@@ -108,12 +108,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle float-start" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
-								<div class="position-relative">
-									<i class="fa-solid fa-envelope-open-text text-muted fs-4"></i>
-									<span class="indicator">4</span>
-								</div>
-							</a>
+							
 							<a class="nav-icon dropdown-toggle float-start" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="fa-solid fa-bell text-muted fs-4"></i>
@@ -273,11 +268,22 @@
                         </div>
                         <div class="card-body justify-content-center">
                             <div class="row d-flex justify-content-center">
-                                <div class="col-12 col-lg-10 col-md-10 col-sm-12">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                     <div class="mb-1 w-100">
                                         <label class="form-label">Store Name</label>
                                         <input type="text" class="form-control" placeholder="Disabled input" >
                                     </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+									<div class="card-body text-center">
+										<!-- <h4>Logo</h4> -->
+										<img src="assets/img/all-images/no-pictures.png" alt="Christina Mason" class="img-fluid mb-2" width="50" height="50">
+	
+										<div>
+											<a class="btn btn-primary btn-sm upload-btn"  href="#"> Upload</a>
+											<input type="file" id="imageUpload" name="image" accept="image/*" style="display: none;">
+										</div>
+									</div>
                                 </div>
                             </div>
                             <div class="card-header ps-0 d-flex justify-content-center">
@@ -352,7 +358,11 @@
                 
                     <script src="js/app.js"></script>
                 
-                    
+                    <script>
+						      document.querySelector('.upload-btn').addEventListener('click', function() {
+            document.getElementById('imageUpload').click();
+        });
+					</script>
                     
                     
                     
