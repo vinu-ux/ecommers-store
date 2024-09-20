@@ -1518,7 +1518,7 @@ Location:
 }
 
 .mobile-sidebar.mobile-sidebar2 {
-  background: var(--ztc-text-text-14);
+  background: var(--ztc-text-text-1);
   overflow-y: scroll;
 }
 .mobile-sidebar.mobile-sidebar2 .menu-close {
@@ -5319,4 +5319,7 @@ color: #FE846F;
 
 .plan .button:hover, .plan .button:focus {
   background-color: #4133B7;
+}
+.nav-sty li a span,.nav-sty {
+color: black !important ;
 }
