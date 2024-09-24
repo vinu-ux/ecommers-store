@@ -266,7 +266,19 @@
 				<div class="container-fluid p-0" >
                     <div class="card flex-fill mb-0">
                         <div class="card-header">
-                            <h4 class="fw-bold text-muted">User Manage</h4>
+                            <div class="tabs-area text-center">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="pill" type="button" >All</button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="pill" type="button" >Open</button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link"  data-bs-toggle="pill"  type="button" >Answered</button>
+                                  </li>
+                                </ul>
+                              </div>
                         </div>
                     </div>
                 <div class="col-12 col-lg-12 col-xxl-12 d-flex">
@@ -274,27 +286,20 @@
                         <table class="table table-hover my-0">
                             <thead>
                                 <tr class="bg7">
-                                    <th>ID</th>
-                                    <th >Username</th>
-                                    <th >Email</th>
-                                    <th>Phone</th>
-                                    <th >Total Order</th>
-                                    <th >Registered Date</th>
-                                    <th >Actions</th>
+                                    <th>Ticket</th>
+                                    <th >Subject</th>
+                                    <th >Status</th>
+                                    <th>Department</th>
+                                    <th >Date</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>86</td>
-                                    <td class="sty-col">Charlie</td>
-                                    <td ><span class="">charlie@gmail.com</span> </td>
-                                    <td class="sty-col">9876543555</td>
-                                    <td class="sty-col">0</td>
-                                    <td class="sty-col">8th Sep 2024 at 11:20am</td>
-                                    <td class="sty-col">
-                                        <button class="btn btn-primary"><i class="fa-solid fa-eye text-white"></i></button>
-                                        <button class="btn btn-danger"><i class="fa-solid fa-trash text-white"></i></button>
-                                    </td>
+                                    <td>#526710</td>
+                                    <td class="sty-col">Mail Not working properly</td>
+                                    <td ><span class="badge bg-warning ms-1">Answered</span> </td>
+                                    <td class="sty-col">General Category</td>
+                                    <td class="sty-col">2024-09-01 11:28:56</td>
                                 </tr>
                                 
                                 
