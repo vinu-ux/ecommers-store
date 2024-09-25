@@ -5329,3 +5329,9 @@ color: #FE846F;
 .nav-sty li a span,.nav-sty {
 color: black !important ;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 460px) {
+  .fnt-sm {
+    font-size: 8px;
+  }
+}
