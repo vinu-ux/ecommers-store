@@ -4975,6 +4975,10 @@ background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rg
   box-shadow: 0 0 1px 0 rgba(0, 12, 32, .04), 0 10px 16px 0 rgba(10, 31, 68, .06);
 }
 
+.sh2{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
 .testimonial-box {
   background-color: #fff;
   box-shadow: 0 0 1px 0 rgba(0, 12, 32, .04), 0 10px 16px 0 rgba(10, 31, 68, .06);
