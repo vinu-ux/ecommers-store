@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/app.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/css/app.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -117,7 +118,12 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							
+							<a class="nav-icon dropdown-toggle float-start" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="fa-solid fa-envelope-open-text text-muted fs-4"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
 							<a class="nav-icon dropdown-toggle float-start" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="fa-solid fa-bell text-muted fs-4"></i>
@@ -271,11 +277,35 @@
 
 			<main class="content p-0" style="overflow: scroll;overflow-x: hidden;" >
 				<div class="container-fluid p-0" >
-                    <div  class="row align-items-center justify-content-center" style="height: 80vh;">
-                       <a class="d-flex justify-content-center align-items-center text-decoration-none" href="create-store.html"> <div class="col-lg-4 col-md-6 col-sm-12 col-12 bg-white sh flex-column d-flex justify-content-center align-items-center" style="height: 300px;">
-                            <i class="fa-solid fa-cart-plus fs-1 mb-2"></i>
-                            <h3 class="fw-semibold">Create New Store</h3>
-                        </div></a>
+                    <div class="col-12 col-lg-12 col-xxl-12 d-flex ">
+                        <div class="card flex-fill w-100 overflow-scroll">
+                            <div class="card-header">
+
+                                <h5 class="card-title mb-0">Dashboard</h5>
+                            </div>
+                            <table class="table table-hover my-0">
+                                <thead>
+                                    <tr>
+                                        <th >Store Name</th>
+                                        <th >Status</th>
+                                        <th class="sty-col">Renewal cost</th>
+                                        <th class="sty-col">Billing Cycle</th>
+                                        <th class="sty-col">Expiry Date</th>
+                                        <th ></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td >shop2host.com</td>
+                                        <td ><span class="badge bg-lt-green text-success">Active</span></td>
+                                        <td >948.26 INR</td>
+                                        <td >1Year/s</td>
+                                        <td >2025-08-25</td>
+                                        <td ><a href="ecommersstore.html" class="btn btn-primary">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     </div>
                 </main>
