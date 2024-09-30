@@ -12827,7 +12827,7 @@ textarea:focus {
 }
 /*-------- 12. Footer style ---------*/
 .contact-info-wrap .footer-logo {
-  margin: 0 0 52px;
+  margin: 0 0 20px;
 }
 @media only screen and (max-width: 767px) {
   .contact-info-wrap .footer-logo {
@@ -17699,7 +17699,7 @@ h3.cart-page-title {
 }
 
 #tranding .tranding-slider {
-  height: 34rem;
+  height: 30rem;
   padding: 2rem 0;
   position: relative;
 }
@@ -17711,10 +17711,11 @@ h3.cart-page-title {
 }
 
 .tranding-slide {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem !important;
+  height: 20rem;
   position: relative;
 }
+
 
 @media (max-width:500px) {
   .tranding-slide {
@@ -17727,9 +17728,16 @@ h3.cart-page-title {
   }
 }
 
+.tranding-slide-content:hover{
+  opacity: 1;
+}
+.tranding-slide-content{
+  opacity: 0;
+}
+
 .tranding-slide .tranding-slide-img img {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -17882,4 +17890,8 @@ h3.cart-page-title {
 
 .border-r{
   border-radius: 2rem;
+}
+
+.border-5per{
+  border-radius: 5%;
 }
