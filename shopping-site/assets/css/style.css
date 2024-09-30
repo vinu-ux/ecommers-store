@@ -12644,7 +12644,7 @@ textarea:focus {
   font-family: "simple-line-icons";
   content: "\e01e";
   z-index: 999;
-  color: #000000;
+  color: white;
 }
 .subscribe-form .subscribe-form-style .mc-form input {
   color: #999999;
