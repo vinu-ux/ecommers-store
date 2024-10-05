@@ -8452,6 +8452,15 @@ textarea:focus {
 .related-product-active .slick-list {
   margin: 0 -15px;
 }
+
+.h21rem{
+  min-height: 21rem !important;
+}
+
+.h16rem{
+  min-height: 16.5rem!important;
+}
+
 .product-slider-active .slick-list .product-plr-1,
 .product-slider-active-3 .slick-list .product-plr-1,
 .product-slider-active-4 .slick-list .product-plr-1,
@@ -17733,6 +17742,15 @@ h3.cart-page-title {
   text-decoration: none;
   background-color: #1D3461;
   color: #fff;
+}
+
+.product-csrd-sty{
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.product-csrd-sty1{
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 
