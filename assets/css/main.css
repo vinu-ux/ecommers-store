@@ -5334,6 +5334,33 @@ color: #FE846F;
 color: black !important ;
 }
 
+.h2rem{
+  height: 2rem !important;
+}
+.fnt8rem{
+  font-size: .8rem !important;
+}
+
+
+.form-control{
+    background: #eff1f4 !important;
+    border: none !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    color: inherit !important;
+    text-indent: 9px !important;
+    height: 2rem !important;
+}
+
+.graybg{
+  background-color: #eff1f4 !important;
+  border: none !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 460px) {
   .fnt-sm {
     font-size: 8px;
