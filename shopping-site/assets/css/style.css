@@ -1926,11 +1926,11 @@ textarea:focus {
 }
 
 .bg-blue {
-  background-color: #0064e0;
+  background-color: #1b9ce5;
 }
 
 .bg-orange {
-  background-color: #e44311;
+  background-color: #f79e02;
 }
 
 .bg-green-2 {
@@ -4096,7 +4096,7 @@ textarea:focus {
   background-color: #468707;
 }
 .main-categori-wrap.main-categori-wrap-modify-2 > a.categori-blue {
-  background-color: #03479b;
+  background-color: #0074e1;
 }
 .main-categori-wrap.main-categori-wrap-modify-2 > a i.icon-right {
   top: 1px;
@@ -4340,10 +4340,10 @@ textarea:focus {
   visibility: visible;
 }
 .category-menu-2.category-menu-2-blue {
-  border: 1px solid #03479b;
+  border: 1px solid #0074e1;
 }
 .category-menu-2.category-menu-2-blue nav > ul > li:hover > a, .category-menu-2.category-menu-2-blue nav > ul > li:hover > a span {
-  color: #0064e0;
+  color: #0074e1;
 }
 
 .header-quick-contect ul {
@@ -17761,6 +17761,9 @@ h3.cart-page-title {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.min10rem{
+  min-height: 10rem;
+}
 
 
 
