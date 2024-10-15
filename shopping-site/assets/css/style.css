@@ -5285,7 +5285,7 @@ textarea:focus {
   color: #ffffff;
 }
 .btn-style-1 a.btn-1-orange {
-  background-color: #e44311;
+  background-color: #f79e02;
 }
 .btn-style-1 a.btn-1-orange:hover {
   background-color: #000000;
@@ -8861,6 +8861,13 @@ textarea:focus {
 .tab-style-3.tab-style-3-green-2 a.active {
   color: #6aae27;
   background-color: #eef8e4;
+}
+.tab-style-3.tab-style-3-red-2 a:hover {
+  color: #cf3c3c;
+}
+.tab-style-3.tab-style-3-red-2 a.active {
+  color: #cf3c3c;
+  background-color: #f8e4e7;
 }
 
 .single-product-wrap-2 {
@@ -17754,15 +17761,24 @@ h3.cart-page-title {
 
 .product-csrd-sty{
   border-radius: 10px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 .product-csrd-sty1{
-  border-radius: 10px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: .5rem;
+  border: 1px solid #d2c9c9;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+}
+.product-shadow{
+  border-radius: .5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .min10rem{
   min-height: 10rem;
+}
+
+.brown-lt{
+  color: #554349;
 }
 
 
