@@ -657,9 +657,9 @@ Location:
     width: 25% !important;
   }
 }
-@media (max-width: 434px) {
+@media (max-width: 366px) {
   .b-sty hr {
-    width: 20% !important;
+    width: 10% !important;
   }
 }
 @media (max-width: 571px) {
