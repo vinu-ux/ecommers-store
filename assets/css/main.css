@@ -647,12 +647,17 @@ Location:
     line-height: var(--ztc-font-size-font-s40);
   }
 }
+@media (max-width: 571px) {
+  .shadow-lg {
+    box-shadow: 0 0 0 0 !important;
+}
+}
 @media (max-width: 991px) {
   .cust-box {
-    margin-top: 5% !important;
+    margin-top: 10% !important;
   }
   .align-bg{
-    margin-top: 2%!important;
+    display: none;
   }
 }
 .heading2 p {
