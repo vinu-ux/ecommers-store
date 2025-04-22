@@ -647,6 +647,14 @@ Location:
     line-height: var(--ztc-font-size-font-s40);
   }
 }
+@media (max-width: 991px) {
+  .cust-box {
+    margin-top: 5% !important;
+  }
+  .align-bg{
+    margin-top: 2%!important;
+  }
+}
 .heading2 p {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
