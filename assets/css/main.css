@@ -657,6 +657,11 @@ Location:
     width: 25% !important;
   }
 }
+@media (max-width: 434px) {
+  .b-sty hr {
+    width: 20% !important;
+  }
+}
 @media (max-width: 571px) {
   .shadow-lg {
     box-shadow: 0 0 0 0 !important;
