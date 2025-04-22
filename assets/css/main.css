@@ -647,6 +647,11 @@ Location:
     line-height: var(--ztc-font-size-font-s40);
   }
 }
+@media (max-width: 540px) {
+  .b-sty hr {
+    width: 30% !important;
+  }
+}
 @media (max-width: 571px) {
   .shadow-lg {
     box-shadow: 0 0 0 0 !important;
