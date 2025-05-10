@@ -96,12 +96,20 @@ ul, li{
 }
 
 
-.mobile-sidebar.mobile-menu-active{
+@media only screen and (min-width: 991px) and (max-width: 1800px) {
+  .mobile-sidebar.mobile-menu-active{
+    left: -300px
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-sidebar.mobile-menu-active{
     left: 0;
     visibility: visible;
     opacity: 1;
     transition: all .3s;
     overflow-y:scroll ;
+}
 }
 
 .menu-close {

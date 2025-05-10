@@ -59,8 +59,8 @@
       if (settings.sticky === true) mobile_menu.css('position', 'fixed');
       var resizeFix = function () {
           if ($(window).width() > 991) {
-              mobile_menu.find('ul').show('fadeIn');
-              mobile_menu.find('ul.sub-menu').hide('fadeIn');
+              // mobile_menu.find('ul').show('fadeIn');
+              // mobile_menu.find('ul.sub-menu').hide('fadeIn');
           }
       };
       resizeFix();
