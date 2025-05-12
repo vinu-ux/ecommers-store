@@ -1,4 +1,6 @@
+@import url('../css/testimonials.css');
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap");
+
 a, a:hover {
   text-decoration: none;
 }
@@ -807,6 +809,10 @@ Location:
   z-index: 1;
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.fz-icon-sty-44{
+  font-size: var(--ztc-font-size-font-s44) !important;
 }
 .heading8 h5::after {
   position: absolute;
@@ -4071,7 +4077,15 @@ Location:
 /*============= TEAM CSS AREA ===============*/
 
 
+.fd-card:hover {
+            transform: translateY(-10px); /* Move card up slightly on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+        }
 
+.fd-card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transform for scaling */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
 
 
@@ -4817,7 +4831,6 @@ Location:
 
 .testimonial3-section-area {
   position: relative;
-  background: var(--ztc-bg-bg-2);
 }
 .testimonial3-section-area .testimonial-header {
   margin-bottom: 60px;
@@ -4832,18 +4845,28 @@ Location:
     margin-bottom: 30px;
   }
 }
+ 
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active {
   position: relative;
   z-index: 2;
   border-radius: 8px;
 }
-.testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box {
-  background: none;
+.testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item .testimonial-box1 {
+  background: rgba(224, 223, 223, 0.438);
+  filter: blur(.2px);
 }
+.testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-box1 {
+  background: white;
+  filter: none;
+  animation: zoomEffect 10s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box .quito1 {
   filter: brightness(0) invert(1);
   transition: all 0.4s;
 }
+
 .testimonial3-section-area .testimonial2-owl-carousel-area.owl-carousel .owl-item.active .testimonial-author-box ul li {
   background: rgb(26,11,59);
   background: linear-gradient(53deg, rgba(26,11,59,1) 0%, rgba(47,24,99,1) 59%, rgba(58,30,120,1) 97%);
@@ -5473,3 +5496,11 @@ color: black !important ;
     font-size: 8px;
   }
 }
+@keyframes zoomEffect {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.08);
+      }
+    }
